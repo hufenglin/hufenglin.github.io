@@ -31,7 +31,7 @@ Best Regards,
 Fan Chen
 
 
-### 查询工资单 
+###  查询工资单 
 
 	1.https://circuit.intel.com/portal/index.html#/Home
 	2.My Benefits & Career
@@ -40,3 +40,4 @@ Fan Chen
 	5.Employee Self Service Tool
 	6.自己
 	7.工资单
+
