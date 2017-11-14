@@ -29,3 +29,13 @@ Chen Fan		15 days  	 6 days’ absence(12/5,9,12,22,23,26)
 
 Best Regards,
 Fan Chen
+
+
+### 查询工资单 
+	1.https://circuit.intel.com/portal/index.html#/Home
+	2.My Benefits & Career
+	3.Compensation
+	4.Pay
+	5.Employee Self Service Tool
+	6.自己
+	7.工资单
