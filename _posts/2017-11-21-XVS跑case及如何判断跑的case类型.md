@@ -23,7 +23,7 @@
  
       cd /usr/tet/XVS/cadence/nightly/
 
-2 . 进行编辑，增加或者减少要跑的case,注意case名字不是这样bat_nightly_64_g32e，后面的 “_64_g32e ” 是XVS跑的时候自己加的，在编辑这个文件时不要加后面的东西。
+2 . 进行编辑，增加或者减少要跑的case  , 注意case名字不是这样bat_nightly_64_g32e，后面的 “_64_g32e ” 是XVS跑的时候自己加的，在编辑这个文件时不要加后面的东西。
 
                 # gtest
 		gtest bat_nightly
