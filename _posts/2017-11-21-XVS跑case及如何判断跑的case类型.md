@@ -56,9 +56,9 @@
       is_hwreplay=0 //表示跑boch
       is_hwreplay=1 //表示跑hwreplay
 
-4 . 在当前目录下执行如下命令，就会生成一个新的log，比如 s2017-11-03-183434
+4 . 在当前目录下执行如下命令《tmp 是第2步新建的文件，里面有要跑的case》，就会生成一个新的log，比如 s2017-11-03-183434
   
-       xvs run tmp《tmp 是第2步新建的文件，里面有要跑的case》
+       xvs run tmp
 
 
 
