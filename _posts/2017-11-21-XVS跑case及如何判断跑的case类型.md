@@ -25,10 +25,10 @@
 
 2 . 进行编辑，增加或者减少要跑的case  , 注意case名字不是这样bat_nightly_64_g32e，后面的 “_64_g32e ” 是XVS跑的时候自己加的，在编辑这个文件时不要加后面的东西。
 
-                # gtest
+		# gtest
 		gtest bat_nightly
 		gtest kb_nightly_vnic
-		
+
 		# performance
 		performance up_linpack_vnic
 		performance up_ppv_Dgemm_vnic
@@ -38,12 +38,12 @@
 		performance up_ppv_Stream_vnic
 		performance up_ppv_Pstates_vnic
 		performance up_stream_vnic
-		
+
 		# performance
 		performance Win_Concurrent_Linpack_vnic
 		performance Win_mPrime_vnic
-		
-		
+
+
 		#control_panel
 		control_panel KVM_256M_guest_vnic
 		control_panel KVM_Ramdisk_crashme
