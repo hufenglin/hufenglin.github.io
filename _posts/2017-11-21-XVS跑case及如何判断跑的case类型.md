@@ -25,7 +25,7 @@
 
 2 . 进行编辑，增加或者减少要跑的case
        
-        # gtest
+                # gtest
 		gtest bat_nightly
 		gtest kb_nightly_vnic
 		
