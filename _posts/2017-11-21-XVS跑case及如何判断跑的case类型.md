@@ -50,7 +50,8 @@
 		control_panel KVM_Ramdisk_du
 		control_panel KVM_Ramdisk_idle
 		control_panel KVM_Ramdisk_linpack
-3 . 修改/share/xvs/var/samp_conf文件
+
+3 . 修改/share/xvs/var/samp_conf文件，看要跑boch还是hwreplay
    
       is_hwreplay=0 //表示跑boch
       is_hwreplay=1 //表示跑hwreplay
