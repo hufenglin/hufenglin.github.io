@@ -70,8 +70,13 @@
 6 . 想要结束正在运行的 XVS 需要新建一个终端窗口，执行以下命令：
         
        xvs stop      
-             
        
+7 . 跑完CASE后，执行如下命令可以查看结果：
+
+       XVSReportGenerator
+       
+       
+       
        
 
 
