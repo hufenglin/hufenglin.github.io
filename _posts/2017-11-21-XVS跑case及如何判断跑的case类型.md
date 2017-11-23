@@ -56,7 +56,7 @@
       is_hwreplay=0 //表示跑boch
       is_hwreplay=1 //表示跑hwreplay
       
-4 .  记住在跑 XVS 之前一定要检查是否有正在运行的 qemu,如果有一定要先杀掉：
+4 .  记住在跑 XVS 之前一定要检查是否有正在运行的 qemu,如果有一定要先杀掉： 如果杀不掉就要重启才行。
  
        ps -ef | grep qemu
        kill -9 （pid号）
