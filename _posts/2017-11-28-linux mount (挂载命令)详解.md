@@ -166,9 +166,9 @@ Windows网络共享的核心是SMB/CIFS，在linux下要挂接(mount)windows的�
 
 如此就可以在linux客户端通过/mnt/nfs来访问其它linux系统或UNIX系统以NFS方式共享出来的文件了。以上操作在 redhat as server 3、redflag server4.1、suse server 9以及Solaris 7、Solaris 8、Solaris 9 for x86&sparc环境下测试通过
 
-###补充：
+### 补充：
 
-####linux加载光驱
+#### linux加载光驱
 
 （1）使用光驱前，要先mount一下：＃mount /dev/cdrom /mnt/cdrom，然后您就可以进入/mnt/cdrom目录下读取光盘内容了；
 
