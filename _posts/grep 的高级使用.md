@@ -16,6 +16,7 @@
 		-l 只列出匹配的文件名
 		-E 将范本样式为延伸的普通表示法来使用，意味着使用能使用扩展正则表达式。
 		-o 只输出文件中匹配到的部分
+		-q 不显示任何信息
 		
 
 ### 2. grep -r递归查找
@@ -28,7 +29,7 @@
 ![](https://imgsa.baidu.com/exp/pic/item/e49cf91190ef76c6a17baef49a16fdfaae516700.jpg)    
 ![](https://imgsa.baidu.com/exp/pic/item/c856613e6709c93d484a5a28983df8dcd0005471.jpg)
 
-###3. grep -i忽略大小写
+### 3. grep -i忽略大小写
     1、不带-i表示大小写敏感，表示要与查找字符串的大小写一致；
     2、带-i表示忽略大小写，大写和小写都可以。
 
@@ -36,7 +37,7 @@
     grep  -ri "Parameter" /home/test/shell/*   
 ![](https://imgsa.baidu.com/exp/pic/item/1a94b36eddc451dad1a05a34b1fd5266d116325f.jpg)
 
-###4. grep -n显示行数
+### 4. grep -n显示行数
     显示查找字符串在文件的行数位置。
 	grep  -rn "Parameter" /home/test/shell/*
 ![](https://imgsa.baidu.com/exp/pic/item/5af4d7ea15ce36d30503d2ef3df33a87e850b1af.jpg)   
@@ -74,6 +75,12 @@
 		2198_
 		2212_
 		2380_
+		
+### 7 . grep -q静默输出,不显示任何信息
+
+	grep -q "test" filename #不会输出任何信息，如果命令运行成功返回0，失败则返回非0值。一般用于条件测试。
+
+
 
 	
 
