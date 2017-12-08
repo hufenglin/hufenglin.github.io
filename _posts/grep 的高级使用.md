@@ -3,11 +3,11 @@
 ----------
 #### linux下通过grep来查找含有指定字符串的所有文件的方法。以查找Parameter这个字符串为例。
 
-##方法/步骤
+## 方法/步骤
 ### 1. grep用法
 	            
         grep [options] PATTERN [FILE...]
-		grep [选项] 要查找的字符串 查找范围(查找路径)
+	grep [选项] 要查找的字符串 查找范围(查找路径)      
 ###### 常用组合为：grep -rinl "要查找的字符串" 查找范围，rinl表示如下：
 		
 		-r 是递归查找，查找所有文件包含子目录
@@ -21,11 +21,11 @@
 
 ### 2. grep -r递归查找
 	1、不带-r查找范围不包括子目录，只是指定目录下的所有文件；   
-    2、带-r时查找范围包括子目录。
+        2、带-r时查找范围包括子目录。
    
-    grep  -i "Parameter" /home/test/shell/*   
-    grep  -ri "Parameter" /home/test/shell/*
- `*`: 表示当前目录所有文件，也可以是某个文件名  
+        grep  -i "Parameter" /home/test/shell/*   
+        grep  -ri "Parameter" /home/test/shell/*
+       `*`: 表示当前目录所有文件，也可以是某个文件名  
 ![](https://imgsa.baidu.com/exp/pic/item/e49cf91190ef76c6a17baef49a16fdfaae516700.jpg)    
 ![](https://imgsa.baidu.com/exp/pic/item/c856613e6709c93d484a5a28983df8dcd0005471.jpg)
 
@@ -33,25 +33,26 @@
     1、不带-i表示大小写敏感，表示要与查找字符串的大小写一致；
     2、带-i表示忽略大小写，大写和小写都可以。
 
-	grep  -i "Parameter" /home/test/shell/*
+    grep  -i "Parameter" /home/test/shell/*
     grep  -ri "Parameter" /home/test/shell/*   
 ![](https://imgsa.baidu.com/exp/pic/item/1a94b36eddc451dad1a05a34b1fd5266d116325f.jpg)
 
 ### 4. grep -n显示行数
     显示查找字符串在文件的行数位置。
-	grep  -rn "Parameter" /home/test/shell/*
+    grep  -rn "Parameter" /home/test/shell/*      
 ![](https://imgsa.baidu.com/exp/pic/item/5af4d7ea15ce36d30503d2ef3df33a87e850b1af.jpg)   
+
 ### 5. grep -l只显示匹配的文件名。
 	grep  -ri "Parameter" /home/test/shell/*
 	grep  -ril "Parameter" /home/test/shell/*   
 ![](https://imgsa.baidu.com/exp/pic/item/86d5bac27d1ed21b46ce7d3aaa6eddc450da3fae.jpg)
 
-### 5 . grep -E使用正则表达式 
+### 6 . grep -E使用正则表达式 
 
 	ls | grep -E "[1-9]+"  #输出当前目录下所有文件名字包含1-9的数字的文件名
 
 
-### 6 . grep -o只输出文件中匹配到的部分
+### 7 . grep -o只输出文件中匹配到的部分
 
 	echo this is a test line. | grep -o -E "[a-z]+\."  #输出前面是字母后面有.的单词
 	line.
@@ -76,7 +77,7 @@
 		2212_
 		2380_
 		
-### 7 . grep -q静默输出,不显示任何信息
+### 8 . grep -q静默输出,不显示任何信息
 
 	grep -q "test" filename #不会输出任何信息，如果命令运行成功返回0，失败则返回非0值。一般用于条件测试。
       
