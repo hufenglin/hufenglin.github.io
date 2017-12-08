@@ -14,6 +14,9 @@
 		-i 忽略大小写
 		-n 是显示行号
 		-l 只列出匹配的文件名
+		-E 将范本样式为延伸的普通表示法来使用，意味着使用能使用扩展正则表达式。
+		-o 只输出文件中匹配到的部分
+		
 
 ### 2. grep -r递归查找
 	1、不带-r查找范围不包括子目录，只是指定目录下的所有文件；   
@@ -41,3 +44,38 @@
 	grep  -ri "Parameter" /home/test/shell/*
 	grep  -ril "Parameter" /home/test/shell/*   
 ![](https://imgsa.baidu.com/exp/pic/item/86d5bac27d1ed21b46ce7d3aaa6eddc450da3fae.jpg)
+
+### 5 . grep -E使用正则表达式 
+
+	ls | grep -E "[1-9]+"  #输出当前目录下所有文件名字包含1-9的数字的文件名
+
+
+### 6 . grep -o只输出文件中匹配到的部分
+
+	echo this is a test line. | grep -o -E "[a-z]+\."  #输出前面是字母后面有.的单词
+	line.
+	echo this is a test line. | egrep -o "[a-z]+\."
+	line.
+	ls
+		1224_offline_replay.log  1423_offline_replay.log  1642_offline_replay.log  1840_offline_replay.log  2380_offline_replay.log
+		1241_offline_replay.log  1434_offline_replay.log  1692_offline_replay.log  2198_offline_replay.log  fvde
+		1302_offline_replay.log  1507_offline_replay.log  1837_offline_replay.log  2212_offline_replay.log
+	ls | grep -o -E "[0-9]+\_"  #输出当前目录下所有文件名字的数字后有_的部分
+		1224_
+		1241_
+		1302_
+		1423_
+		1434_
+		1507_
+		1642_
+		1692_
+		1837_
+		1840_
+		2198_
+		2212_
+		2380_
+
+	
+
+
+
