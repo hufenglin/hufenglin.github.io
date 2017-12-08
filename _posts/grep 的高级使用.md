@@ -21,8 +21,9 @@
 		
 
 ### 2. grep -r递归查找
+
 	1、不带-r查找范围不包括子目录，只是指定目录下的所有文件；   
-        2、带-r时查找范围包括子目录。
+	2、带-r时查找范围包括子目录。
    
         grep  -i "Parameter" /home/test/shell/*   
         grep  -ri "Parameter" /home/test/shell/*
