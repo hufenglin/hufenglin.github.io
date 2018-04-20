@@ -74,8 +74,8 @@ Hardware Clock.
 
 	[root@new55 ~]# date 
 	2010年 11月 06日 星期六 21:11:57 CST
-	[root@new55 ~]# date 11062112     <== 格式 mmddHHMM，即 月日时分 
-	2010年 11月 06日 星期六 21:12:00 CST
+	[root@new55 ~]# date -s “2016-4-18 15:14:23”
+	2016年 4月 18日 星期六 15:14:23 CST
 	[root@new55 ~]# hwclock -w 
 	[root@new55 ~]# hwclock 
 	2010年11月06日 星期六 21时12分13秒  -0.648818 seconds
