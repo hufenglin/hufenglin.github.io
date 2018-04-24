@@ -1,6 +1,6 @@
 # 测试PCIe_replay  (pcie-mtr-no-dump-replay)
 
-## 一：打开串口log机器192.168.199.193
+## 一：打开串口log机器192.168.199.193  !!!注意一定是串口机器
 
 >首先搞清楚，机器log(即 host log)<通过九插针的读取>；；      
 >扩展卡log（即 mcu log）<通过USB线读取>
@@ -11,6 +11,29 @@
 >sdv5->ccdcom0;;sdv3->ccdcom1;;sdv8->ccdcom2
 
 	ll /dev/
+	[root@cicada-serial-port ~]# ll /dev/
+	total 0
+	crw-------  1 root root     10, 235 Mar 26 01:50 autofs
+	drwxr-xr-x  2 root root         160 Mar 26 01:50 block
+	drwxr-xr-x  2 root root          60 Mar 26 01:50 bsg
+	crw-------  1 root root     10, 234 Mar 26 01:50 btrfs-control
+	drwxr-xr-x  3 root root          60 Mar 26 01:50 bus
+	lrwxrwxrwx  1 root root           7 Mar 26 01:50 ccdcom0 -> ttyUSB1
+	lrwxrwxrwx  1 root root           7 Mar 26 01:50 ccdcom1 -> ttyUSB0
+	lrwxrwxrwx  1 root root           7 Mar 26 01:50 ccdcom10 -> ttyUSB7
+	lrwxrwxrwx  1 root root           7 Mar 26 01:50 ccdcom11 -> ttyUSB5
+	lrwxrwxrwx  1 root root           8 Mar 26 01:50 ccdcom12 -> ttyUSB11
+	lrwxrwxrwx  1 root root           7 Mar 26 01:50 ccdcom13 -> ttyUSB9
+	lrwxrwxrwx  1 root root           8 Mar 26 01:50 ccdcom14 -> ttyUSB14
+	lrwxrwxrwx  1 root root           7 Mar 26 01:50 ccdcom2 -> ttyUSB4
+	lrwxrwxrwx  1 root root           7 Mar 26 01:50 ccdcom3 -> ttyUSB2
+	lrwxrwxrwx  1 root root           7 Mar 26 01:50 ccdcom4 -> ttyUSB8
+	lrwxrwxrwx  1 root root           7 Mar 26 01:50 ccdcom5 -> ttyUSB6
+	lrwxrwxrwx  1 root root           8 Mar 26 01:50 ccdcom6 -> ttyUSB12
+	lrwxrwxrwx  1 root root           8 Mar 26 01:50 ccdcom7 -> ttyUSB10
+	lrwxrwxrwx  1 root root           7 Mar 26 01:50 ccdcom8 -> ttyUSB3
+	lrwxrwxrwx  1 root root           8 Mar 26 01:50 ccdcom9 -> ttyUSB13
+
 
 ### 1 . 2 知道机器对应的ttyUSBx，所抓的log是机器log（host log）
 
