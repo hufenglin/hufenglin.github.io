@@ -61,7 +61,9 @@ uniq可检查文本文件中重复出现的行列。
 	harley
 	linda
 
-cut -c 1-8 | sort | uniq -c > result.txt
+.
+
+	cut -c 1-8 | sort | uniq -c > result.txt
 
 	1 casely
 	2 harley
