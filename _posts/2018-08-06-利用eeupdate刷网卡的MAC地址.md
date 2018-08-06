@@ -1,5 +1,5 @@
 ###  准备一个分区格式必须是FAT32的U盘，拷一个eeupdate工具
-[eeupdate工具下载](eeupdate工具 "https://github.com/hufenglin/hufenglin.github.io/blob/master/_posts/change%20linux%20mac%20address.zip")
+[eeupdate工具下载](https://github.com/hufenglin/hufenglin.github.io/blob/master/_posts/change%20linux%20mac%20address.zip)
 
 ### 1. 按F2进入BIOS选项
 
