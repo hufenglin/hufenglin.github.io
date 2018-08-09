@@ -60,7 +60,11 @@
 	 fdisk /dev/nvme0n1
 	Ø d       #删除delete
 	Ø p       #打印print
-	直到删完然后重启机器      
+	直到删完然后重启机器，然后进行格式化    
+	mkfs.ext4 /dev/sda      
+	
+	
+	
 	
 	
 
