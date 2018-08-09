@@ -54,6 +54,16 @@
 
 	   [root@localhost ~]#mount /dev/hdd1 /hdd1
 	   [root@localhost ~]#mount /dev/hdd2 /hdd2
+	   
+### 例如格式化一块不能挂载的硬盘，之后再挂载
+
+	 fdisk /dev/nvme0n1
+	Ø d       #删除delete
+	Ø p       #打印print
+	直到删完然后重启机器      
+	
+	
+
 
 
 ###  链接：[关于fdisk的详细使用](https://www.cnblogs.com/rosepotato/p/8177988.html)
