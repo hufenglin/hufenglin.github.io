@@ -61,14 +61,9 @@
 	Ø d       #删除delete
 	Ø p       #打印print
 	直到删完然后重启机器，然后进行格式化    
-	mkfs.ext4 /dev/sda      
+	mkfs.ext4 /dev/sda  之后进行挂载就可以成功了
 	
 	
-	
-	
-	
-
-
 
 ###  链接：[关于fdisk的详细使用](https://www.cnblogs.com/rosepotato/p/8177988.html)
 
