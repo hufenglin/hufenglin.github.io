@@ -1,0 +1,32 @@
+
+## Ubuntu下更改网卡的MAC地址的方法
+
+
+我们知道每块网卡（NIC）都有一个固化在硬件存储器中物理地址（或称硬件地址），也就是MAC，这个地址，在出厂上就已经固定，除非是使用可擦写编程器重写，否则是无法变更的。
+
+这里所说的更改网卡的MAC地址，其实是针对操作系统对MAC地址的读取规律，而对OS做出的一种欺骗方法。因为操作系统通常是从硬件网卡读取 MAC地址后，再存储在注册表（如windows）、配置文件等之中，以后就直接从这些存储空间读取了。所以可以通过修改这里面的MAC地址，来“更改” 网卡的MAC地址。
+
+之所以摸索ubuntu下更改网卡的地址，乃是因为有些上网服务与MAC地址绑定，这样，如果原先的网卡坏了更换新的而又不想去经历官僚的变更手续，或者是又有台式机又有笔记本的时候，希望在能够在两台机器都上网（同时只能使用一台）的话，那就要考虑使用了。
+
+
+### 在ubuntu下更改MAC地址的命令是ifconfig（和windows下的ipconfig还是比较相似的），如果要更改MAC地址，可以新开一个终端，依次使用以下    命令：
+    
+    sudo ifconfig eth0 down #（停用网卡）
+    
+    sudo ifconfig eth0 hw ether XX:XX:XX:XX:XX:XX ##(需要更改的MAC地址)
+    
+    sudo ifconfig eth0 up ###（启用网卡）
+
+然后再用ifconfig查看一下，需要查看ifconfig的各个参数含义，可以用man ifconfig查看帮助。
+
+如果需要每次系统启动后，都自动修改好MAC地址的话，那么可以将以上命令写入启动脚本中，方法是将它写入/etc/init.d/rc.local，方法很简单，找一个自己熟悉的编辑器复制进去就是（如：sudo gedit /etc/init.d/rc.local）。
+
+## 永久修改：
+    
+    可以将上面几行放入 /etc/rcS.d/rc.local 文件，rc.local中的bash命令在启动系统时会自动执行
+    
+    或者
+    
+    直接编辑 /etc/network/interfaces 文件
+    
+    pre-up ifconfig eth0 hw ether xx:xx:xx:xx:xx:xx
