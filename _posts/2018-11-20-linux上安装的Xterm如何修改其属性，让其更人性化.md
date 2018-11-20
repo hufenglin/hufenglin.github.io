@@ -16,7 +16,8 @@ XTerm是Linux系统中常用的一个终端模拟软件,但其丑陋的默认字
 
 
 
-### 2.运行xrdb(X server resource database utility):
+### 2.在~/.bashrc目录下增加下面一句话来运行xrdb(X server resource database utility):
+	
 	
 	xrdb -merge ~/.Xresources
 
