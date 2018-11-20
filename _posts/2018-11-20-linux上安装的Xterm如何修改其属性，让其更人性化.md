@@ -21,7 +21,7 @@ XTerm是Linux系统中常用的一个终端模拟软件,但其丑陋的默认字
 	
 	xrdb -merge ~/.Xresources
 
-###  改变可执行权限
+###  3.改变可执行权限
 
 	chmod a+x  ~/.bashrc
 
