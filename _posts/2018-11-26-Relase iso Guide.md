@@ -17,11 +17,11 @@
 
 6.  `chroot ./squashfs-root`
 
-7.  备份一个本机的源，后面还要更改回来 `cp sources.list /etc/apt/`
+7.  `cp sources.list /etc/apt/`
 
 8.  `apt-get update`
 
-9.  vim /etc/environment添加：
+9.  vim /etc/environment  add：
 
 
 		export GIT_PROXY_COMMAND=/usr/local/bin/git-proxy.sh
@@ -56,11 +56,11 @@
 
 21. Copy out `lib/modules/$YOUR_MODULES`, `usr/lib/modules/efi64/mboot.c32`, `vmlinuz` and `xen.gz` to modify initrd later.
 
-22. 换成默认的 `cp sources.list /etc/apt/`
+22.  `cp sources.list /etc/apt/`
 
 23.  `apt-get update`
 
-24.  vim /etc/environment删掉添加的：
+24.  vim /etc/environment   remove：
 
 
 		export GIT_PROXY_COMMAND=/usr/local/bin/git-proxy.sh
@@ -69,9 +69,9 @@
 		export https_proxy="http://child-prc.intel.com:913/"
 		export ftp_proxy="http://child-prc.intel.com:913/"
 
-25.  删掉  `/usr/local/bin/git-proxy.sh`
+25.  remove  `/usr/local/bin/git-proxy.sh`
 
-26.  删掉  `/usr/bin/connect` 、 `/usr/local/bin/connect.c`
+26.  remove  `/usr/bin/connect` 、 `/usr/local/bin/connect.c`
 
 
 27. Re-package filesystem.squashfs with `mksquashfs squashfs-root filesystem.squashfs`. Replace the old squashfs with the new one.
@@ -108,7 +108,4 @@
  
 2.  `xorriso -as mkisofs -isohybrid-mbr ../my.bin -D -r -V "Intel GVT-g" -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -eltorito-alt-boot -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat -o ../ISO_NAME.iso .`
 
-
-
-## 东方闪电
 
