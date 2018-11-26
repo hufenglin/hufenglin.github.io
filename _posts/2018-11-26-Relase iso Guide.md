@@ -63,11 +63,12 @@
 24.  vim /etc/environment   remove：
 
 
-		export GIT_PROXY_COMMAND=/usr/local/bin/git-proxy.sh
-		export no_proxy="localhost,127.0.0.1,.intel.com"
-		export http_proxy="http://child-prc.intel.com:913/"
-		export https_proxy="http://child-prc.intel.com:913/"
-		export ftp_proxy="http://child-prc.intel.com:913/"
+		export GIT_PROXY_COMMAND=/usr/local/bin/git-proxy.sh      
+		export no_proxy="localhost,127.0.0.1,.intel.com"      
+		export http_proxy="http://child-prc.intel.com:913/"      
+		export https_proxy="http://child-prc.intel.com:913/"      
+		export ftp_proxy="http://child-prc.intel.com:913/"      
+		
 
 25.  remove  `/usr/local/bin/git-proxy.sh`
 
