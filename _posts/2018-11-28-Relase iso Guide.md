@@ -55,10 +55,10 @@
 
 7. **配置git 代理**
 
- 		cp /Tools/git-proxy.sh  fenglin/casper/squashfs-root/usr/local/bin/
+		cp /Tools/git-proxy.sh  fenglin/casper/squashfs-root/usr/local/bin/
 		source /etc/environment
 
-8.  **编译connect.c文件**
+8. **编译connect.c文件**
 
 		cp /Tools/connect.c  fenglin/casper/squashfs-root/usr/local/bin/connect.c
 		gcc /usr/local/bin/connect.c -o /usr/bin/connect
@@ -118,7 +118,7 @@
 
 		apt-get install git libfdt-dev libpixman-1-dev libssl-dev vim socat libsdl1.2-dev libspice-server-dev autoconf libtool xtightvncviewer tightvncserver x11vnc libsdl1.2-dev uuid-runtime uuid uml-utilities bridge-utils python-dev liblzma-dev libc6-dev libegl1-mesa-dev libepoxy-dev libdrm-dev libgbm-dev libelf-dev libsdl2-dev -y
 
-6. **生成 **Kernel** 并安装的两种方法**
+6. **生成 Kernel 并安装的两种方法**
 
 	一：
 
@@ -211,9 +211,9 @@
 		cp xen/xen.gz /boot/xen-gvt.gz
 
 
-20. Delete `gvt-linux`, and  `igvtg-xen`  directories.
+3. Delete `gvt-linux`, and  `igvtg-xen`  directories.
 
-18. Delete old kernels and bash history, then exit and umount everything.
+4. Delete old kernels and bash history, then exit and umount everything.
 	
  
 		查询系统中装了多少内核
@@ -232,26 +232,27 @@
 		通过上面方法就可以。
 
 
-22.  在`/etc/apt/`目录下换成默认的`sources.list`，将之前 备份的改回来。
+5.  在`/etc/apt/`目录下换成默认的`sources.list`，将之前 备份的改回来。
 
-23.  `apt-get update`
+6.  `apt-get update`
 
-24.  `vim /etc/environment`删掉添加的：
+7.  `vim /etc/environment`删掉添加的：
 
 
 		export GIT_PROXY_COMMAND=/usr/local/bin/git-proxy.sh
 		export no_proxy="localhost,127.0.0.1,.intel.com"
 		export http_proxy="http://child-prc.intel.com:913/"
 		export https_proxy="http://child-prc.intel.com:913/"
-		export ftp_proxy="http://child-prc.intel.com:913/"
-
-25.  删掉  `/usr/local/bin/git-proxy.sh`
-
-26.  删掉  `/usr/bin/connect` 、 `/usr/local/bin/connect.c`
+		export ftp_proxy="http://child-prc.intel.com:913/"      
 
 
+8.  删掉  `/usr/local/bin/git-proxy.sh`
 
-19. 清除历史，并退出,然后取消挂载。
+9.  删掉  `/usr/bin/connect` 、 `/usr/local/bin/connect.c`
+
+
+
+10. 清除历史，并退出,然后取消挂载。
         
 	    history -c
 		exit
@@ -262,20 +263,20 @@
 		umount squashfs-root/sys    //不能取消挂载直接重启即可
 
 
-19. 拷贝/Tools/下面的grub.d  到 `fenglin/casper/squashfs-root/etc/grub.d` 来替换.
+11. 拷贝/Tools/下面的grub.d  到 `fenglin/casper/squashfs-root/etc/grub.d` 来替换.
 
 		cd /Tools
 		cp grub.d /home/fei/fenglin/casper/squashfs-root/etc/  -r
 
 
-20. 拷贝/Tools/下面的scripts 到 `fenglin/casper/squashfs-root/usr/share/script`, 并且将/Tools/Launch_Guest.desktop 拷贝到 `fenglin/squashfs-root/usr/share/applications/`.
+12. 拷贝/Tools/下面的scripts 到 `fenglin/casper/squashfs-root/usr/share/script`, 并且将/Tools/Launch_Guest.desktop 拷贝到 `fenglin/squashfs-root/usr/share/applications/`.
 
 
 		cp script /home/fei/fenglin/casper/squashfs-root/usr/share/ -r
 		cp Launch_Guest.desktop /home/fei/fenglin/casper/squashfs-root/usr/share/applications/
 		
 
-21. Copy out
+13. Copy out
 
 		fenglin/casper/squashfs-root/lib/modules/$YOUR_MODULES   //cp fenglin/casper/squashfs-root/lib/modules/4.17.0+  /root -r
 		fenglin/casper/squashfs-root/usr/lib/syslinux/modules/efi64/mboot.c32   //find ./ -name mboot.c32  注意是efi64
@@ -284,15 +285,15 @@
 		
 
 
-22.  删除以前的filesystem.squashfs
+14.  删除以前的filesystem.squashfs
 
 		进入 fenglin/casper下面删掉filesystem.squashfs
 
-27.  压缩现在修改好的squashfs-root
+15.  压缩现在修改好的squashfs-root
    
 		mksquashfs squashfs-root filesystem.squashfs
 
-28.  删掉`squashfs-root`
+16.  删掉`squashfs-root`
 
 		rm -rf squashfs-root/
 
@@ -380,13 +381,13 @@
 
 ##  制作U盘启动，在Linux上利用Startup Disk 工具：
 
-		1. CD-Driver/image 选择制作好的ISO
-		2. Device 选择U盘
-		3. Make  Startup Disk
+		 1. CD-Driver/image 选择制作好的ISO
+		 2. Device 选择U盘
+		 3. Make  Startup Disk
 		
 ## 装系统
 
-		选择 Install Intel GVT-g
+		 选择 Install Intel GVT-g
 
 
 
