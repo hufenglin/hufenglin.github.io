@@ -24,11 +24,20 @@ twitter_username: jekyllrb
 github_username:  Hu Fenglin
 
 # Build settings
-markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+##markdown: kramdown
+##theme: minima
+##plugins:
+##  - jekyll-feed
 
+
+name: 美味生活
+
+markdown: redcarpet
+highlighter: pygments
+encoding: utf-8
+
+paginate:            10
+paginate_path: "/blog/page:num/"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
