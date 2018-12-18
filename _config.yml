@@ -31,7 +31,7 @@ plugins:
 
 
 #markdown: redcarpet
-highlighter: pygments
+rouge: pygments
 encoding: utf-8
 
 paginate:            10
