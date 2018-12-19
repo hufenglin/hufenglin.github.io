@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: 技术
-tags: Linux  Xterm 
+tags: Xterm 
 ---
 
 XTerm是Linux系统中常用的一个终端模拟软件,但其丑陋的默认字体让人无法忍受,google了一下相关资料,将修改方法记录如下:
