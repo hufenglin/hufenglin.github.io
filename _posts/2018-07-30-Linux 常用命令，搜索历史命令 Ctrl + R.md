@@ -1,3 +1,8 @@
+---
+layout: post
+categories: 技术
+tags: Linux   
+---
 
 ### 在 Linux 终端下查找历史命令，除了用 累赘的history 之外，有另外一个更加高效实用的命令：Ctrl + R。
 
