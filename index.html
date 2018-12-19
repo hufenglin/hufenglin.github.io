@@ -1,342 +1,104 @@
 ---
-layout: crazepony-cn
-title: crazepony
+layout: default
+home-title: H2O Theme For Jekyll
+description: 或许是最漂亮的Jekyll主题
 ---
 
+{% include header.html %}
 
-
-
-<div class="container carousel-container">
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-	  <div class="carouselContainer">
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="/assets/img/crazepony-slide-1920.png" alt="Components" class="img-responsive">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Crazepony MINI四轴飞行器</h1>
-              <p>繁星若尘，带来娱乐性/开发性最强的开源空中机器人——微型四轴飞行器。</p>
-              <p>
-                <a class="btn btn-large btn-primary" href="#intro">了解更多</a>
-                <a class="btn btn-large btn-danger" href="http://shop111225004.taobao.com/" target="_blank">淘宝购买</a>
-              </p>
-              <p class="version">最新版本 CrazePony 5.2 &nbsp;&nbsp; <a href="history.html">版本历史</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://img04.taobaocdn.com/imgextra/i4/532197584/TB2UzCkaXXXXXXhXpXXXXXXXXXX_!!532197584.png" alt="Components" >
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>CrazePOV旋转时钟</h1>
-			  <p>一起DIY你的第一个酷炫的电子设计作品。</p>
-              <p></p>
-              <p><a class="btn btn-large btn-primary" href="pov.html">点击进入</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="http://img02.taobaocdn.com/imgextra/i2/532197584/TB232s_aXXXXXbXXpXXXXXXXXXX_!!532197584.jpg" alt="Components" >
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Crazepony百科</h1>
-              <p>四轴飞行器是一种微型空中智能机器人，技术覆盖电子/机械/通信/计算机/自动化等多个学科领域。</p>
-              <p><a class="btn btn-large btn-primary" href="wiki.html"  target="_blank">点击进入</a></p>
-         </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-	  </div>
-    </div><!-- /.carousel -->
-</div><!-- /.container -->
-
-<!--
-<div class="small-bs-docs-featurette">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <p><a class="btn btn-outline"  data-toggle="collapse" data-parent="#accordion" href="#collapse-share" aria-expanded="true" aria-controls="collapse-share">
-    分享优惠</a>
-         &nbsp;&nbsp;点击分享优惠，购买立减60
-         &nbsp;&nbsp;<a class="btn btn-large btn-danger" href="http://shop111225004.taobao.com/" target="_blank">淘宝购买</a>
-         </p>
-      </div>
-    </div>
-    <div id="collapse-share" class="row panel-collapse collapse">
-      <hr class="half-rule">
-      <div class="col-sm-6">
-        <p>微信扫描下面二维码，分享朋友圈，截图联系客服立减20!</p>
-        <img src="assets/img/qr-2.png" alt="Components" class="img-responsive">
-      </div>
-      <div class="col-sm-6">
-        <p>任选以下一篇博客，分享人人网、校园/航模/技术论坛、博客等，再减40！！</p>
-        <ul  class="list-unstyled">
-          <li><a href="./2015/11/30/about-crazepony.html" target="_blank">Crazepony开源四轴飞行器</a>（推荐）</li>
-          <li><a href="./2014/05/29/story-with-crazepony-2.html" target="_blank">我和Crazepony的那点事儿</a></li>
-          <li><a href="./2015/01/23/about-5-1-version.html" target="_blank">Crazepony鞭状天线室外飞行记</a></li>
-          <li><a href="./2014/09/19/crazepony-computer-vision.html" target="_blank">CrazePony与计算机视觉</a></li>
-          <li><a href="./wiki/motor-aircraft-model.html" target="_blank">航模电机</a></li>
-          <li><a href="./wiki/motor-control-ic.html" target="_blank">航模电机驱动控制</a></li>
-          <li><a href="./wiki/softmain.html" target="_blank">Crazepony软件框架讲解</a></li>
-          <li><a href="./wiki/auto-hold.html" target="_blank">自主悬停&高度融合</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
--->
-
-<!-- Page content of course! -->
-
-<div class="bs-docs-featurette" id="intro">
-  <div class="container">
-
-    <h2 class="bs-docs-featurette-title">Crazepony， 一个对抗地心引力的梦。</h2>
-    <p class="lead">Crazepony起源于孩子对飞行的梦想，承载着一群大学生对科技的热爱和追求。我们一起开发了Crazepony MINI四轴飞行器，并且将之开源，形成了飞行器爱好者社区。</p>
-
-    <hr class="half-rule">
-
-    <div class="row">
-      <div class="col-sm-4">
-        <img src="assets/img/5-11.jpg" alt="Components" class="img-responsive">
-        <h3>无人机的诱惑</h3>
-        <p>无人机飞行器是一个集成了机械/电子/自动化等的智能空中机器人，是科技与人类飞行梦想的结晶。如果想入手四轴飞行器，你会发现Crazepony是最适合新手入门的开源四轴飞行器平台。</p>
-      </div>
-      <div class="col-sm-4">
-        <img src="assets/img/index-1.jpg" alt="Components" class="img-responsive">
-        <h3>Crazepony MINI四轴</h3>
-        <p>Crazepony微型四轴飞行器设计精美，功能完备，并且是开源的，提供详尽开发文档/笔记，你可以制作属于自己的Crazepony四轴飞行器。也可以通过我们提供的平台进行学习研究，二次开发。</p>
-      </div>
-      <div class="col-sm-4">
-        <img src="assets/img/44.jpg" alt="Components" class="img-responsive">
-        <h3>毕设/竞赛/就业好帮手</h3>
-        <p>无人机飞行器是大学生毕设/竞赛/就业中提高逼格的好帮手。Crazepony MINI帮助小伙伴获得了学校创新基金申请，还为多个小伙伴进入<a href="http://www.dji.com" target="_blank">DJI</a>等公司立下了赫赫战功。</p>
-      </div>
-    </div>
-    
-  </div>
+<div
+    class="g-banner home-banner {{ site.theme-color | prepend: 'banner-theme-' }}"
+    data-theme="{{ site.theme-color }}"
+    style="{% if page.header-img %}background: url({{ page.header-img | prepend: site.baseurl }}) no-repeat center center; background-size: cover;{% endif %}"
+>
+    <h2>{{ page.home-title }}</h2>
+    <h3>{{ page.description }}</h3>
 </div>
 
-<div class="bs-docs-featurette" id="feature">
-  <div class="container">
-    <h2 class="bs-docs-featurette-title">主要特征</h2> 
-    <p class="lead">Crazepony四轴飞行器采用32位ARM处理器STM32，在传统2.4G遥控器控制基础上，实现智能手机蓝牙2.1/4.0 BLE遥控功能。在结构/软硬件上为DIY提供可扩展接口，基于CrazePony可以制作<a href="" target="_blank">航拍四轴</a>和<a href="" target="_blank">自平衡小车</a>。</p>
+<main class="g-container home-content">
+    <div class="article-list">
+        {% for post in paginator.posts %}
+            <article class="article-item">
+                {% if post.cover %}
+                <div class="post-cover">
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a>
+                    <img src="{{ post.cover }}" href="{{ post.url | prepend: site.baseurl }}" alt="">
+                </div>
+                {% endif %}
+                <section class="post-preview">
+                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"></a>
+                    <h2 class="post-title">{{ post.title }}</h2>
+                    {% if post.subtitle %}
+                    <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+                    {% endif %}
+                    {% if post.subtitle.size==0 or post.subtitle==nil %}
+                    <p class="post-excerpt">{{ post.excerpt | strip_html | strip_newlines | truncate: 126}}</p>
+                    {% endif %}
+                </section>
+                <footer class="post-meta">
+                    <div class="post-tags">
+                        {% if post.tags.size > 0 %}
+                            {% for tag in post.tags  %}
+                            <a href={{ "tags.html#" | append: tag | pretend: site.baseurl}} class="post-tag">{{ tag }}</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                    <time class="post-date" datetime="{{ post.date | date:"%y-%m-%d" }}">{{ post.date | date_to_string }}</time>
+                </footer>
+            </article>
+        {% endfor %}
 
-    <hr class="half-rule">
+        {% if paginator.total_pages > 1 %}
+            {% include pageNav.html %}
+        {% endif %}
 
-    <div class="row bs-docs-featured-sites">
-    
-      <div class="col-sm-2">
-        <div class="thumbnail">
-            <p><i class="fa fa-cogs fa-2x"></i></p>
-            <p>72MHz的32位Cortex-M3架构处理器STM32</p>
-        </div>
-
-        <div class="thumbnail">
-            <p><i class="fa fa-random fa-2x"></i></p>
-            <p>传统蓝牙/蓝牙4.0 BLE无线控制</p>
-        </div>
-
-        <div class="thumbnail">
-            <p><i class="fa fa-exchange fa-2x"></i></p>
-            <p>2.4G无线射频收发芯片nRF24L01+无线控制</p>
-        </div>
-
-        <div class="thumbnail">
-            <p><i class="fa fa-power-off fa-2x"></i></p>
-            <p>650mAh航模电池，6分钟续航能力</p>
-        </div>
-      </div>
-    
-      <div class="col-sm-8">
-        <img src="assets/img/hand.png" alt="Responsive across devices" class="img-responsive">
-      </div>
-
-      <div class="col-sm-2">
-        <div class="thumbnail">
-            <p><i class="fa fa-joomla fa-2x"></i></p>
-            <p>对角距离14厘米，真正的掌上四轴</p>
-        </div>
-
-        <div class="thumbnail">
-            <p><i class="fa fa-cubes fa-2x"></i></p>
-            <p>6维度传感器MPU6050</p>
-        </div>
-
-        <div class="thumbnail">
-            <p><i class="fa fa-send fa-2x"></i></p>
-            <p>高精度气压计MS5611，实现Z轴方向室内自主悬停</p>
-        </div>
-
-        <div class="thumbnail">
-            <p><i class="fa fa-windows fa-2x"></i></p>
-            <p>Cleanflight飞控系统支持（计划）</p>
-        </div>
-      </div>
     </div>
 
-    <hr class="half-rule">
+    <aside class="g-sidebar-wrapper">
+        <div class="g-sidebar">
+            <section class="author-card">
+                <div class="avatar">
+                    <img src="{{ site.avatar | prepend: site.baseurl }}" alt="">
+                </div>
+                <div class="author-name" rel="author">{{ site.author }}</div>
+                <div class="bio">
+                    <p>{{ site.bio }}</p>
+                </div>
+                {% if site.sns.size > 0 %}
+                <ul id="sns-links" class="sns-links">
+                    {% for s in site.sns %}
+                    <li>
+                        <a href="{{ s[1] }}" target="_blank">
+                            <i class="iconfont icon-{{ s[0] }}"></i>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </section>
 
-    <p><i class="fa fa-battery fa-2x"></i></p>
-    <p><i class="fa fa-github fa-2x"></i></p>
-    <p class="lead">Crazepony是完全开源的，我们的项目托管在github上。</p>
-    <a href="https://github.com/Crazepony" class="btn btn-outline btn-lg" target="_blank">github上查看该项目</a>
-    
-
-  </div>
-</div>
-
-<div class="bs-docs-featurette" id="about-us">
-  <div class="container">
-    <h2 class="bs-docs-featurette-title">Crazepony精彩欣赏</h2>
-    <p class="lead">很多朋友参与到Crazepony的外形设计，飞行体验，网站设计，视频/图片拍摄中。这里将其中的一部分精彩分享给大家。</p>
-
-    <hr class="half-rule">
-    <div class="row featurette">
-
-        <div class="col-md-8">
-            <a class="fancybox-media" href="http://player.youku.com/player.php/sid/XODg4MjY5OTg0/v.swf">
-                <img src="/assets/img/video-poster-1.jpg" alt="Crazepony 4.1版本视频" class="img-responsive">
-            </a>
+            {% if site.recommend-tags and site.tags.size>0 %}
+            <section class="tags-card">
+                {% for tag in site.tags %}
+                    {% if forloop.index > site.recommend-condition-size %}
+                        {% break %}
+                    {% endif %}
+                    <a href="{{ "tags.html#" | append: tag[0] | prepend: site.baseurl }}" class="tag">{{ tag[0]}}</a>
+                {% endfor %}
+            </section>
+            {% endif %}
         </div>
 
-        <div class="col-md-4">
-            <a class="fancybox-media" href="http://player.youku.com/player.php/sid/XNzYzNDg5NjA4/v.swf">
-                <img src="/assets/img/video-poster-2.jpg" alt="CrazePOV项目讲解" class="img-responsive">
-            </a>
-
-            <hr>
-
-            <a class="fancybox-media" href="http://player.youku.com/player.php/sid/XNzU3MzQ4NzMy/v.swf">
-                <img src="/assets/img/video-poster-3.jpg" alt="飞行时倩影" class="img-responsive">
-            </a>
+        {% if site.search %}
+        <div class="search-card">
+            <input id="search_input" type="text" placeholder="Search..." autocomplete="off">
+            <i class="iconfont icon-search"></i>
+            <div class="search_result"></div>
         </div>
-    </div>
+        {% endif %}
 
-    <hr class="half-rule">
+    </aside>
 
-    <!-- 第一行图片 -->
-    <div class="row">
-      <div class="col-sm-3">
-    <a href="/assets/img/5-6.jpg" title="蝙蝠侠遥控器" class="fancybox" rel="group">
-        <img src="/assets/img/5-6.jpg" alt="蝙蝠侠遥控器" class="img-responsive">
-    </a>
-      </div>
-      <div class="col-sm-3">
-    <a href="/assets/img/5-10.jpg" title="平衡调试中" class="fancybox" rel="group">
-        <img src="/assets/img/5-10.jpg" alt="平衡调试中" class="img-responsive">
-    </a>
-      </div>
-      <div class="col-sm-3">
-        <a href="/assets/img/5-1-2.jpg" title="飞行时倩影" class="fancybox" rel="group">
-            <img src="/assets/img/5-1-2.jpg" alt="飞行时倩影" class="img-responsive">
-        </a>
-      </div>
-      <div class="col-sm-3">
-    <a href="/assets/img/5-2-2.jpg" title="再来一张" class="fancybox" rel="group">
-        <img src="/assets/img/5-2-2.jpg" alt="再来一张" class="img-responsive">
-    </a>
-      </div>
-    </div>
+</main>
 
-    <hr>
-
-    <!-- 第二行图片 -->
-    <div class="row">
-      <div class="col-sm-3">
-        <a href="http://img02.taobaocdn.com/imgextra/i2/532197584/TB23DX.aXXXXXX6XXXXXXXXXXXX_!!532197584.jpg" title="飞行时倩影" class="fancybox" rel="group">
-            <img src="http://img02.taobaocdn.com/imgextra/i2/532197584/TB23DX.aXXXXXX6XXXXXXXXXXXX_!!532197584.jpg" alt="飞行时倩影" class="img-responsive">
-        </a>
-      </div>
-      <div class="col-sm-3">
-    <a href="http://img01.taobaocdn.com/imgextra/i1/532197584/TB2zpX.aXXXXXbjXXXXXXXXXXXX-532197584.jpg" title="再来一张" class="fancybox" rel="group">
-        <img src="http://img01.taobaocdn.com/imgextra/i1/532197584/TB2zpX.aXXXXXbjXXXXXXXXXXXX-532197584.jpg" alt="再来一张" class="img-responsive">
-    </a>
-      </div>
-      <div class="col-sm-3">
-    <a href="http://img02.taobaocdn.com/imgextra/i2/532197584/TB2lcJ3aXXXXXbDXpXXXXXXXXXX_!!532197584.jpg" title="平衡调试中" class="fancybox" rel="group">
-        <img src="http://img02.taobaocdn.com/imgextra/i2/532197584/TB2lcJ3aXXXXXbDXpXXXXXXXXXX_!!532197584.jpg" alt="平衡调试中" class="img-responsive">
-    </a>
-      </div>
-      <div class="col-sm-3">
-    <a href="http://img01.taobaocdn.com/imgextra/i1/532197584/TB2TRl4aXXXXXXIXpXXXXXXXXXX_!!532197584.jpg" title="蝙蝠侠遥控器" class="fancybox" rel="group">
-        <img src="http://img01.taobaocdn.com/imgextra/i1/532197584/TB2TRl4aXXXXXXIXpXXXXXXXXXX_!!532197584.jpg" alt="蝙蝠侠遥控器" class="img-responsive">
-    </a>
-      </div>
-    </div>
-
-
-    <hr>
-
-    <div class="row">
-      <div class="col-sm-12">
-        <a class="btn btn-outline"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-    更多图片
-        </a>
-      </div>
-    </div>
-
-    <hr>
-
-    <!-- 第三行图片 处于折叠状态-->
-
-    <div class="row">
-    <div id="collapseOne" class="panel-collapse collapse">
-      <div class="col-sm-3">
-        <a href="http://img04.taobaocdn.com/imgextra/i4/532197584/TB2EuT1aXXXXXXOXXXXXXXXXXXX_!!532197584.jpg" title="飞行时倩影" class="fancybox" rel="group">
-            <img src="http://img04.taobaocdn.com/imgextra/i4/532197584/TB2EuT1aXXXXXXOXXXXXXXXXXXX_!!532197584.jpg" alt="飞行时倩影" class="img-responsive">
-        </a>
-      </div>
-      <div class="col-sm-3">
-    <a href="http://img03.taobaocdn.com/imgextra/i3/532197584/TB2iQTWaXXXXXbQXXXXXXXXXXXX_!!532197584.jpg" title="包装图" class="fancybox" rel="group">
-        <img src="http://img03.taobaocdn.com/imgextra/i3/532197584/TB2iQTWaXXXXXbQXXXXXXXXXXXX_!!532197584.jpg" alt="包装图" class="img-responsive">
-    </a>
-      </div>
-      <div class="col-sm-3">
-        <a href="http://img02.taobaocdn.com/imgextra/i2/532197584/TB2amzWaXXXXXXAXXXXXXXXXXXX_!!532197584.jpg" title="再来一张" class="fancybox" rel="group">
-            <img src="http://img02.taobaocdn.com/imgextra/i2/532197584/TB2amzWaXXXXXXAXXXXXXXXXXXX_!!532197584.jpg" alt="再来一张" class="img-responsive">
-        </a>
-      </div>
-      <div class="col-sm-3">
-    <a href="http://img03.taobaocdn.com/imgextra/i3/532197584/TB2Dx_YaXXXXXXZXXXXXXXXXXXX_!!532197584.jpg" title="正在调试中" class="fancybox" rel="group">
-        <img src="http://img03.taobaocdn.com/imgextra/i3/532197584/TB2Dx_YaXXXXXXZXXXXXXXXXXXX_!!532197584.jpg" alt="正在调试中" class="img-responsive">
-    </a>
-      </div>
-    </div>
-    </div>
-  </div>
-</div>
-
-<div class="bs-docs-featurette" id="about-us">
-  <div class="container">
-    <h2 class="bs-docs-featurette-title">我们的故事</h2>
-    <p class="lead">我们的团队由一群充满梦想的创客/开源硬件爱好者组成。热衷于将创意和技术结合起来，追求纯粹，追求卓越。关于我们更多的故事，到<a href="./blog.html">Crazepony博客</a>看看。</p>
-    <p><i class="fa fa-envelope"></i>&nbsp;&nbsp;info@crazepony.com</p>
-    <p><i class="fa fa-qq"></i>&nbsp;&nbsp;487319060（二号群）346226561（2千人群，已满）</p>
-
-    <hr class="half-rule">
-    <div class="row featurette">
-        <div class="col-md-6">
-            <img src="assets/img/index-2.jpg" alt="Responsive across devices" class="img-responsive">
-            <h3>创客/开源硬件</h3>
-            <p>我们是Maker，借由我们的力量、思想和精神，我们收集、塑造、成形。</p>
-        </div>
-        <div class="col-md-6">
-            <img src="assets/img/index-4.jpg" alt="Responsive across devices" class="img-responsive">
-            <h3>梦想家/筑梦者</h3>
-            <p>一点天真，一点梦想，一点追求，我们是和自己赛跑的人。</p>
-        </div>
-    </div>
-  </div> 
-</div>
+{% include footer.html %}
