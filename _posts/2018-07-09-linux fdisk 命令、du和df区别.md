@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Linux   
+---
+
 ## 常用用法：
 
 	fdisk -l  查看当前的磁盘分区信息(主要是分区表信息)
