@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Shell   
+---
+
 ## 为什么要用xargs，问题的来源:
 
 linux命令可以从两个地方读取要处理的内容，一个是通过命令行参数，一个是标准输入。例如cat、grep就是这样的命令，举个例子：
