@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: 技术
-tags: git   
+tags: Git   
 ---
 
 # 1 . 查看远程分支
