@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Cicada   
+---
+
 ## 1 . 测试SSD
 
 ### 1 . 1 执行如下命令，查看设备信息的BDF号：
