@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: 技术
-tags: salary   
+tags: 备忘资料   
 ---
 
 Hi,
