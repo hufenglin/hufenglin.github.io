@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Shell   
+---
+
 ##  getopts
 
 	语法格式：getopts [option[:]] [DESCPRITION] VARIABLE
