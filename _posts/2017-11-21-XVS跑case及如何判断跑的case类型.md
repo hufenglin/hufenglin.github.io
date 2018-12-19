@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Shell XVS   
+---
+
 ##   如何查看跑的是boch 还是hw_replay
 
 1 . 进入跑完的log目录下：
