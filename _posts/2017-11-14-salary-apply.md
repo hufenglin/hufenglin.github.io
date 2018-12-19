@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: salary   
+---
+
 Hi,
 
 以下是关于申请工资的步骤：
