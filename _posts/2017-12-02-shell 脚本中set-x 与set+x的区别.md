@@ -1,3 +1,8 @@
+---
+layout: post
+categories: 技术
+tags: Shell   
+---
 
 #### linux shell 脚本编写好要经过漫长的调试阶段，可以使用sh -x 执行。但是这种情况在远程调用脚本的时候，就有诸多不便。
 
