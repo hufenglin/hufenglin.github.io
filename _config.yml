@@ -23,6 +23,31 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  Hu Fenglin
 
+avatar: '/assets/img/profile.png'
+
+# Search
+search: true
+
+# Night mode
+nightMode: true
+
+# MathJax 公式支持 by Ray-Eldath
+mathjax: true
+
+# Share
+social-share: true
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+
+# theme color 主题皮肤
+theme-color: 'default'  # pink or default
+
+# Post header background patterns (when the post no cover): circuitBoard, overlappingCircles, food, glamorous, ticTacToe, seaOfClouds
+postPatterns: 'circuitBoard'
+
+# Tags 设置标签
+recommend-tags: true # whether or not display recommend-tags on the sidebar
+recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
+
 # Build settings
 markdown: kramdown
 theme: minima
@@ -48,3 +73,7 @@ paginate_path: "/blog/page:num/"
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+# Plugins
+plugins: [jekyll-paginate]
