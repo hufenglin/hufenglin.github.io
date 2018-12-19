@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: git   
+---
+
 # 1 . 查看远程分支
 
       $ git branch -a  
