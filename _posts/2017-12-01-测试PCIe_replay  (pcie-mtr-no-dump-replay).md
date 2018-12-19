@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Cicada   
+---
+
 # 测试PCIe_replay  (pcie-mtr-no-dump-replay)
 
 ## 一：打开串口log机器192.168.199.193  !!!注意一定是串口机器
