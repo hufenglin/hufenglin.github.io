@@ -13,15 +13,23 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: HOME-PAGE  
+title: 个人的学习博客 
 email: 1171581066@qq.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to my blog! Any questions can contact me.
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
 github_username:  Hu Fenglin
+
+# Navigation links
+nav:
+  home: '/'
+  tags: '/tags.html'
+
+# Footer
+footer:
+  since: 2018
 
 avatar: '/assets/img/profile.png'
 
@@ -31,12 +39,17 @@ search: true
 # Night mode
 nightMode: true
 
+# Comments 评论功能
+comments:
+  disqus: false
+  disqus_url: 'https://liaokeyu.disqus.com/embed.js'
+
 # MathJax 公式支持 by Ray-Eldath
 mathjax: true
 
 # Share
 social-share: true
-social-share-items: ['wechat', 'weibo', 'douban', 'twitter']
+social-share-items: ['wechat', 'weibo', 'douban', 'twitter','qq']
 
 # theme color 主题皮肤
 theme-color: 'default'  # pink or default
@@ -49,19 +62,27 @@ recommend-tags: true # whether or not display recommend-tags on the sidebar
 recommend-condition-size: 12 # a tag will be recommended if the size of it is more than this value
 
 # Build settings
+paginate: 10
+paginate_path: 'page:num'
+exclude: ['node_modules', 'dev', 'package.json', 'gulpfile.js', '.gitignore', 'README.md']
+
 markdown: kramdown
-theme: minima
+#theme: minima
+highlighter: rouge
+encoding: utf-8
+kramdown:
+  input: GFM
 plugins:
   - jekyll-feed
 
 
-markdown: kramdown
-#rouge: pygments
-highlighter: rouge
-encoding: utf-8
+
 
 paginate:  10
 paginate_path: "/blog/page:num/"
+
+
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
@@ -74,6 +95,13 @@ paginate_path: "/blog/page:num/"
 #   - vendor/gems/
 #   - vendor/ruby/
 
+
+# RSS
+RSS: false
+
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
+permalink: /:year/:month/:day/:title.html
 
 # Plugins
 plugins: [jekyll-paginate]
