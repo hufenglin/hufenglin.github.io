@@ -1,3 +1,8 @@
+---
+layout: post
+categories: 技术
+tags: 虚拟化   
+---
 
 # KVM简介
 
