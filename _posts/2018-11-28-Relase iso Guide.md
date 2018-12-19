@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: 测试工具   
+---
+
 ##  一、Prepare
 
 1.  **Download and decompress an Ubuntu ISO image.**
