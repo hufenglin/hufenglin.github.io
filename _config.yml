@@ -72,8 +72,8 @@ highlighter: rouge
 encoding: utf-8
 kramdown:
   input: GFM
-#plugins:
-#  - jekyll-feed
+plugins:
+  - jekyll-feed
 
 
 # Exclude from processing.
