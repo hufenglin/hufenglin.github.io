@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Linux   
+---
+
 ## ssh-config和sshd_config配置文件区别
 
         远程管理linux系统基本上都要使用到ssh，原因很简单：telnet、FTP等传输方式是?以明文传送
