@@ -1,7 +1,7 @@
 ---
 layout: post
 categories: 技术
-tags: linux   
+tags: Linux   
 ---
 
 # 挂接命令(mount) 
