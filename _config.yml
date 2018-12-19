@@ -31,6 +31,11 @@ nav:
 footer:
   since: 2018
 
+
+# Author 配置博主信息
+author: '胡枫林'
+nickname: '东方闪电'
+bio: 'Linux, KVM, 虚拟化，Shell'
 avatar: '/assets/img/profile.png'
 
 # Search
