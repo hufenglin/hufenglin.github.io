@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Shell   
+---
+
 ### 1. eval command-line
 
 其中command－line是在终端上键入的一条普通命令行。然而当在它前面放上eval时，其结果是shell在执行命令行之前扫描它两次。如：
