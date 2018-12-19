@@ -31,10 +31,11 @@ plugins:
 
 
 markdown: kramdown
-rouge: pygments
+#rouge: pygments
+highlighter: rouge
 encoding: utf-8
 
-paginate:            10
+paginate:  10
 paginate_path: "/blog/page:num/"
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
