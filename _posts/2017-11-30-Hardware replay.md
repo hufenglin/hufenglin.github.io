@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Cicada   
+---
+
 ## 什么是Hardware replay 
 
    Hardware replay 意味着使用PCM平台上的另一个虚拟机来replay sampling snapshot。 因为它也是一个基于KVM的虚拟机，所以叫hardware replay。
