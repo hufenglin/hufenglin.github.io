@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: linux   
+---
+
 # 挂接命令(mount) 
 
 首先，介绍一下挂接(mount)命令的使用方法，mount命令参数非常多，这里主要讲一下今天我们要用到的。 
