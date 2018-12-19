@@ -1,4 +1,8 @@
-Shell
+---
+layout: post
+categories: 技术
+tags: Shell  
+---
 
 # df 命令：
 
