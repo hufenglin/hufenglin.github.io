@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Linux   
+---
+
 本文链接：http://codingstandards.iteye.com/blog/804830   （转载请注明出处）
 
 ## 用途说明
