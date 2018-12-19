@@ -1,3 +1,8 @@
+---
+layout: post
+categories: 技术
+tags: Shell   
+---
 
 #### 1、变量声明为数值型
 
