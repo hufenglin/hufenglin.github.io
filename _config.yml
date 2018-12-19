@@ -24,14 +24,14 @@ twitter_username: jekyllrb
 github_username:  Hu Fenglin
 
 # Build settings
-markdown: kramdown
+#markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
 
 
-#markdown: redcarpet
-#rouge: pygments
+markdown: redcarpet
+rouge: pygments
 encoding: utf-8
 
 paginate:            10
