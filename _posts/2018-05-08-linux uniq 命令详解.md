@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Shell   
+---
+
 ## Linux uniq命令
 
 Linux uniq命令用于检查及删除文本文件中重复出现的行列。
