@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Shell error   
+---
+
 ### 今天在WingIDE下写了个脚本，传到服务器执行后提示：
 
      -bash: /usr/bin/autocrorder: /usr/bin/python^M: bad interpreter: No such file or directory
