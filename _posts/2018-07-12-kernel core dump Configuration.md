@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Cicada   
+---
+
 ### add a grub option “softlockup_panic=1”, then redo the test.
 
 
