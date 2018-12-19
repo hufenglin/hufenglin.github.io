@@ -1,3 +1,8 @@
+---
+layout: post
+categories: 技术
+tags: Shell   
+---
 
 Linux ssh下执行ssh命令远程登录其他机器，总是需要输入密码，如果人工去登录，输入密码那还可以，但是让程序自动化登录远程ssh服务器，并执行命令着就比较麻烦了。
 
