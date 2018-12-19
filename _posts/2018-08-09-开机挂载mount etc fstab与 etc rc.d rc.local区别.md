@@ -1,3 +1,9 @@
+---
+layout: post
+categories: 技术
+tags: Linux   
+---
+
 ### 开机挂载mount etc/fstab与/etc/rc.d/rc.local区别差不多，差别就是如果你又程序依赖于NFS的话还是的放到fstab比较好。
 
 ### 放到fstab里面会在程序启动前加载上NFS文件系统，放到rc.local里往往造成程序启动加载时找不到路径
