@@ -21,4 +21,4 @@ tags: Git
 
 ## 基于git发送邮件
 
-git send-email --to lab_gvt-test@intel.com --smtp-server smtp.intel.com 0001-debug_1.patch
+	git send-email --to lab_gvt-test@intel.com --smtp-server smtp.intel.com 0001-debug_1.patch
