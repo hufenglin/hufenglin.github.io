@@ -63,7 +63,7 @@ tags: Git
         master  
         test  
 
-      $ git br -d test  
+      $ git branch -d test  
       Deleted branch test (was 17d28d9).
 
       $ git branch    
