@@ -16,7 +16,13 @@ tags: Git
 
 方法二：
 
-	git config --global core.editor vim
+	$ git config --global core.editor vim
+	
+	
+方法三：设置提交时的编辑器（默认是nano）：
+
+	$ export GIT_EDITOR=vim  
+
 
 
 ## 基于git发送邮件
