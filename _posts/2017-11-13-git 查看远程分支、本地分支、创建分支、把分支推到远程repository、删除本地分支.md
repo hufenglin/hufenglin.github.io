@@ -86,6 +86,10 @@ tags: Git
 	git add <file>    #可反复多次使用，添加多个文件；
 	git commit -m <message>
 	
+	加-a参数可以将前面两步合二为一：
+	$ git commit -a
+
+	
 	$ git add file1.txt
 	$ git add file2.txt file3.txt
 	$ git commit -m "add 3 files."
@@ -113,7 +117,11 @@ tags: Git
 	
 	$ git reset --hard commit-id  # 返档到指定commit版本 
 	
-# 12 .  查看命令历史，以便确定要回到未来的哪个版本
+# 12 .  查看某个commit号的patch
+
+	$ git show commit-id  # 查看指定commit的改动的patch
+	
+# 13 .  查看命令历史，以便确定要回到未来的哪个版本
 
 	$ git reflog
 	  e475afc HEAD@{1}: reset: moving to HEAD^
@@ -121,7 +129,7 @@ tags: Git
 	  e475afc HEAD@{3}: commit: add distributed
 	  eaadf4e HEAD@{4}: commit (initial): wrote a readme file
 	  
-# 13 . 弃对工作区的修改
+# 14 . 弃对工作区的修改
 
 	$ git checkout -- readme.txt  #把readme.txt文件在工作区的修改全部撤销
 	--很重要，没有--，就变成了“切换到另一个分支”的命令
@@ -130,6 +138,10 @@ tags: Git
 	git reset HEAD readme.txt
 	git checkout --readme.txt 
 
+
+# 15  . 查看比较工作区与暂存区的差异
+
+	git diff   # 不加参数即默认比较工作区与暂存区
 	  
 	
 
