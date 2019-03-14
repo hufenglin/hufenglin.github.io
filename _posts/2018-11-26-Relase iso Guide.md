@@ -101,7 +101,7 @@
 
 ## Modify ISO GRUB
 
-1.  Under ISO directory, modify ./boot/grub.cfg and ./isolinux/txt.cfg
+1.  Under ISO directory, modify ./boot/grub/grub.cfg and ./isolinux/txt.cfg
 
 ## Repackage ISO
 
