@@ -366,7 +366,7 @@ tags: 测试工具
 1. 将/Tools下面的`grub.cfg` 、 `txt.cfg`替换到如下目录，并注意修改其中的内容：
 		
 		切换到 fenglin目录下
-		cp /Tools/grub.cfg  ./boot/grub.cfg      //注意一定是/boot下面的grub
+		cp /Tools/grub.cfg  ./boot/grub/grub.cfg      //注意一定是/boot下面的grub
 		cp /Tools/txt.cfg  ./isolinux/txt.cfg
 
 		按照需求修改grub.cfg     //修改4处
