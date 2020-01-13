@@ -227,13 +227,13 @@ tags: Git
 
      git am --abort
      
-3. git reset 使用
+3.git reset 使用
 
-       git reset --soft xxx
-            * soft （修改版本库，保留暂存区，保留工作区）
+     git reset --soft xxx
+           * soft （修改版本库，保留暂存区，保留工作区）
 
-       git reset --hard xxx
-	   * hard （修改版本库，修改暂存区，修改工作区）
+     git reset --hard xxx
+	  * hard （修改版本库，修改暂存区，修改工作区）
 
 
 
