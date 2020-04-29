@@ -77,9 +77,8 @@ tags: Git
 
 # 8 . 删除远程版本
 
-      git push origin :br-1.0.0
-      git branch -r -d origin/branch-name  
-      git push origin :branch-name  
+       git push origin --delete [branchname]
+       
 
 # 9 . 添加文件到Git仓库，分两步：
 
