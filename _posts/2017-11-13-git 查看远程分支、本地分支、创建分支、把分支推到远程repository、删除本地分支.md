@@ -125,7 +125,7 @@ tags: Git
 	
 	当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改
 	git reset HEAD readme.txt
-	git checkout --readme.txt 
+	git checkout -- readme.txt 
 
 
 # 15  . 查看比较工作区与暂存区的差异
