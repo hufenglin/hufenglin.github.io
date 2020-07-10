@@ -11,8 +11,6 @@ tags: Git
 	    master  
 	    remotes/origin/HEAD -> origin/master  
 	    remotes/origin/br-2.1.2.1  
-	    remotes/origin/br-2.1.2.2  
-	    remotes/origin/br-2.1.3  
 	    remotes/origin/master 
  
 # 2 . 查看本地分支
@@ -28,10 +26,10 @@ tags: Git
 	
       git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
       $ git branch test    
-      $ git branch  
-        * br-2.1.2.2  
+      $ git checkout test  
+          br-2.1.2.2  
           master  
-          test
+        * test
 	  
 # 4 . 合并指定分支到当前分支
 
@@ -42,11 +40,6 @@ tags: Git
       $ git push origin test 
 
 # 6 . 切换分支到test
-
-      $ git branch  
-        * br-2.1.2.2  
-          master  
-          test
 
       $ git checkout test  
         Switched to branch 'test'  
@@ -59,9 +52,6 @@ tags: Git
 ### 注意：M 表示从原来分支（上一次修改没有提交br-2.1.2.2）带过来的修改
 
 # 7 . 删除本地分支  git branch -d xxxxx
-
-      $ git checkout br-2.1.2.2  
-        Switched to branch 'br-2.1.2.2'
 
       $ git branch    
        * br-2.1.2.2  
